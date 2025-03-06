@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Endereço</title>
+    
+</head>
+<body>
+
+    <div class="container">
+        <h2>Endereço</h2>
+
+        <form id="enderecoForm" onsubmit="return validarFormulario()">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="Rua">Rua:</label>
+            <input type="text" id="Rua" name="Rua" required>
+
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" required>
+
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento">
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required>
+
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <div id="errorMessages" class="error"></div>
+        <script src="script.js"></script>
+    </div>
+
+    
+    
